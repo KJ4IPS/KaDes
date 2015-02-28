@@ -4,18 +4,18 @@
 #include <xc.h>
 
 #include "config_words.c"
-#include "hardware.c"
-#include "games.h"
-#include "desuicide.h"
+#include "ui.h"
+#include "timer.h"
+
 
 void main (void) {
-    unsigned char progbits[14];
-    if(loadGameFromDB(1)){
-        gameToBitstream(progbits);
-        kabukiInitialize(progbits);
-    }else{
-        /*Game does not exist as a valid gamedb entry!*/
-        NOP(); //BREAK HERE!!!
+    clockSetup();
+    while(1){
+        clockTick();
+        uiTick();
+        if(setEvery100ms){
+            setEvery100ms = 0;
+            incrementUITimer();
+        }
     }
-    NOP();
 }

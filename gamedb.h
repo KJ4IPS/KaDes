@@ -15,7 +15,7 @@ extern "C" {
 extern const char GAMEDB_ENTRY_LENGTH;
 extern const char GAMEDB_BASE[];
 
-extern const char ** gameTitles[];
+extern const char * gameTitles[];
 
 #ifdef	__cplusplus
 }

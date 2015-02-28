@@ -22,4 +22,23 @@
 #define Z80_BUSACK_PIN PORTAbits.RA4
 #define Z80_BUSACK_TRIS TRISAbits.TRISA4
 
+#define LCD_RS_PIN PORTDbits.RD0
+#define LCD_RS_TRIS TRISDbits.TRISD0
+
+#define LCD_RW_PIN PORTDbits.RD1
+#define LCD_RW_TRIS TRISDbits.TRISD1
+
+#define LCD_DBUS_BANK PORTB
+#define LCD_DBUS_TRIS TRISB
+
+#define LCD_E_PIN PORTDbits.RD3
+#define LCD_E_TRIS TRISDbits.TRISD3
+
+#define BUTTON_NEXT_PIN PORTEbits.RE0
+#define BUTTON_NEXT_TRIX TRISEbits.TRISE0
+
+#define BUTTON_GO_PIN PORTEbits.RE1
+#define BUTTON_GO_TRIS TRISEbits.TRISE1
+
+ 
 #endif
