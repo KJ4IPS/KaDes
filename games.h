@@ -1,5 +1,7 @@
-#ifndef GAME_H
-#define	GAME_H
+//#if !defined(GAME_H)  
+//#define GAME_H
+
+//ifdef guards removed (for some reason they kill the preprocessor...)
 
 #ifdef	__cplusplus
 extern "C" {
@@ -19,5 +21,5 @@ extern void gameToBitstream(unsigned char * out);
 }
 #endif
 
-#endif	/* GAME_H */
 
+//#endif	/* GAME_H */

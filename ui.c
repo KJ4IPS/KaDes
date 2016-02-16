@@ -1,9 +1,9 @@
 
 #include <xc.h>
 
+#include "games.h"
 #include "lcd.h"
 #include "gamedb.h"
-#include "games.h"
 #include "desuicide.h"
 
 typedef enum {
