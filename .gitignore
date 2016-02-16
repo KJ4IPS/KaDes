@@ -2,3 +2,17 @@
 build/
 dist/
 nbproject/
+
+*.d
+*.p1
+*.pre
+*.as
+
+*.hex
+*.obj
+*.lst
+*.rlf
+*.cmf
+*.hxl
+*.sdb
+*.sym
